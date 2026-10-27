@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mohammed Riyas M | Java Developer & CSE (AI/ML) Graduate</title>
+<meta name="description" content="Portfolio of Mohammed Riyas M, a 2026 CSE (AI & ML) graduate building backend applications with Java, Spring Boot and MySQL, and exploring machine learning with Python.">
+<meta property="og:title" content="Mohammed Riyas M | Java Developer">
+<meta property="og:description" content="Java, Spring Boot, MySQL and Python projects by a 2026 CSE (AI & ML) graduate.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<style>
+:root{--bg:#F6F1E7;--surface:#fff;--ink:#111;--muted:#555;--orange:#FF7A00;--blue:#2F5BFF;--yellow:#FFE500;--dark:#0A0A0F;--line:#111;--card:#FFFDF8}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15130F;--surface:#1D1A15;--ink:#F6F1E7;--muted:#B9B2A3;--line:#F6F1E7;--card:#221E18;--blue:#6F8DFF}}
+:root[data-theme="dark"]{--bg:#15130F;--surface:#1D1A15;--ink:#F6F1E7;--muted:#B9B2A3;--line:#F6F1E7;--card:#221E18;--blue:#6F8DFF}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px))}
+body{margin:0;font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);color:var(--ink);overflow-x:hidden;padding-bottom:env(safe-area-inset-bottom,0px)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:60}
+h1,h2,h3{margin:0;letter-spacing:-.02em;line-height:1.1}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.sec{padding:88px 0}
+.title{font-size:clamp(28px,4vw,40px);font-weight:800;text-align:center}
+.sub{color:var(--muted);text-align:center;max-width:560px;margin:14px auto 0;line-height:1.6}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:999px;border:2px solid #111;background:var(--orange);color:#111;font-weight:700;text-decoration:none;box-shadow:3px 3px 0 #111;cursor:pointer;font:inherit;font-weight:700;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translate(2px,2px);box-shadow:1px 1px 0 #111}
+.btn.alt{background:var(--surface);color:var(--ink);border-color:var(--line);box-shadow:3px 3px 0 var(--line)}
+.btn.sm{padding:8px 18px;font-size:14px}
+.card{background:var(--card);border:2px solid var(--line);border-radius:16px;box-shadow:4px 4px 0 var(--line);padding:24px}
+.pill{display:inline-block;padding:0 .35em;border:2px solid #111;border-radius:999px;box-shadow:2px 2px 0 #111;color:#111;font-size:.82em;transform:translateY(-.08em)}
+.tag{display:inline-block;font-size:13px;font-weight:700;padding:4px 12px;border:2px solid var(--line);border-radius:999px;background:var(--surface)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--bg);border-bottom:2px solid var(--line)}
+.nl{font-weight:500;font-size:14px;text-decoration:none;padding:6px 10px;border-radius:999px}
+.nl:hover,.nl.on{background:var(--ink);color:var(--bg)}
+.hero{position:relative;text-align:center;padding:72px 0 150px;overflow:hidden}
+.hero h1{font-size:clamp(34px,6.4vw,68px);font-weight:800;max-width:900px;margin:0 auto}
+.doodle{position:absolute;pointer-events:none}
+.wave{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:120px;display:block}
+.dark{background:var(--dark);color:#F6F1E7;position:relative;overflow:hidden}
+.dark .sub{color:#B8B8C4}
+.glow{background:radial-gradient(60% 50% at 50% 55%,rgba(47,91,255,.45),transparent 70%)}
+.proj{display:block;width:100%;text-align:left;padding:0;border:0;background:#16161f;border-radius:14px;overflow:hidden;cursor:pointer;color:#fff;font:inherit;transition:transform .2s}
+.proj:hover{transform:translateY(-4px)}
+.thumb{aspect-ratio:16/10;display:grid;place-items:center;background:linear-gradient(135deg,#f4efe4,#dfe6ff);color:#111;font-weight:800;font-size:20px;padding:16px;text-align:center}
+.cap{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:14px 16px;background:#23232e}
+.cap small{display:block;color:#b8b8c4;font-size:12.5px;margin-top:2px}
+.ico{width:44px;height:44px;color:var(--blue)}
+dialog{border:2px solid var(--line);border-radius:18px;background:var(--card);color:var(--ink);max-width:640px;width:calc(100% - 32px);padding:28px;max-height:88vh;overflow:auto;box-shadow:6px 6px 0 var(--line)}
+dialog::backdrop{background:rgba(0,0,0,.6)}
+dialog h4{margin:18px 0 6px;font-size:15px}
+dialog p,dialog li{color:var(--muted);line-height:1.6;font-size:15px}
+dialog ul{margin:0;padding-left:20px}
+.flow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:13px;font-weight:700}
+.flow span{border:2px solid var(--line);border-radius:8px;padding:4px 8px;background:var(--surface);color:var(--ink)}
+.ph{color:var(--orange);font-weight:700}
+@media (max-width:760px){.doodle.hide-m{display:none}.sec{padding:64px 0}.hero{padding-bottom:120px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important;animation:none!important}}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.hero h1,.hero .intro{animation:rise .7s ease both}
+</style>
+</head>
+<body>
+
+<nav aria-label="Main">
+  <div class="wrap flex items-center justify-between h-[68px]">
+    <a href="#home" class="font-extrabold text-xl no-underline" aria-label="Mohammed Riyas M, home">MR<span style="color:var(--orange)">.</span></a>
+    <div class="hidden lg:flex items-center gap-1" id="links">
+      <a class="nl" href="#home">Home</a><a class="nl" href="#about">About</a><a class="nl" href="#skills">Skills</a><a class="nl" href="#projects">Projects</a><a class="nl" href="#education">Education</a><a class="nl" href="#certifications">Certifications</a><a class="nl" href="#contact">Contact</a>
+    </div>
+    <div class="flex items-center gap-2">
+      <button id="theme" class="btn alt sm" aria-label="Toggle light and dark theme" type="button">Theme</button>
+      <a class="btn sm hidden sm:inline-flex" data-resume href="Mohammed_Riyas_Resume.pdf" download>Resume</a>
+      <button id="menuBtn" class="btn alt sm lg:hidden" aria-expanded="false" aria-controls="menu" aria-label="Open menu" type="button">Menu</button>
+    </div>
+  </div>
+  <div id="menu" class="hidden lg:hidden border-t-2" style="border-color:var(--line)">
+    <div class="wrap py-3 grid gap-1">
+      <a class="nl" href="#about">About</a><a class="nl" href="#skills">Skills</a><a class="nl" href="#projects">Projects</a><a class="nl" href="#education">Education</a><a class="nl" href="#certifications">Certifications</a><a class="nl" href="#contact">Contact</a>
+      <a class="btn sm justify-center mt-2" data-resume href="Mohammed_Riyas_Resume.pdf" download>Download resume</a>
+    </div>
+  </div>
+</nav>
+
+<header id="home" class="hero">
+  <svg class="doodle hide-m" style="left:-30px;top:20px;width:150px" viewBox="0 0 150 230" aria-hidden="true"><path d="M100 6c30 8 28 40 6 62-16 16-6 34 8 44 20 16 4 56-40 90-20 14-60 20-72 14 20-30 38-56 30-84-6-22-30-36-10-70C38 30 74 0 100 6z" fill="#FF7A00" stroke="#111" stroke-width="5"/></svg>
+  <svg class="doodle hide-m" style="right:6%;top:150px;width:28px" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c1 8 4 11 12 12-8 1-11 4-12 12-1-8-4-11-12-12 8-1 11-4 12-12z" fill="#111"/></svg>
+  <svg class="doodle hide-m" style="left:6%;bottom:150px;width:190px" viewBox="0 0 190 90" aria-hidden="true"><path d="M8 70c-8-30 10-50 22-30s-8 46 6 34c14-14 8-50 24-62 14-10 6 40 22 34 14-6 30-18 50-20" fill="none" stroke="#111" stroke-width="3" stroke-linecap="round"/></svg>
+  <svg class="doodle hide-m" style="right:-20px;top:30px;width:90px" viewBox="0 0 90 90" aria-hidden="true"><rect x="12" y="12" width="64" height="64" rx="18" fill="#2F5BFF" stroke="#111" stroke-width="5" transform="rotate(18 44 44)"/></svg>
+  <div class="wrap relative">
+    <p class="intro font-bold text-lg mb-5">Mohammed Riyas M</p>
+    <h1>Building Practical Software Solutions with <span class="pill" style="background:var(--yellow)">Java</span> and <span class="pill" style="background:var(--blue);color:#fff">AI/ML</span></h1>
+    <p class="intro mx-auto mt-7 max-w-[640px] leading-relaxed" style="color:var(--muted)">I’m a 2026 Computer Science and Engineering graduate with a foundation in Java, Spring Boot, MySQL, and Python. I enjoy building backend applications, exploring machine learning, and continuously improving my software development skills.</p>
+    <p class="intro mt-4 font-bold text-sm">Aspiring Software Engineer · Java Developer · CSE (AI &amp; ML) Graduate</p>
+    <div class="intro mt-9 flex flex-wrap justify-center gap-3">
+      <a class="btn" href="#projects">Explore my projects</a>
+      <a class="btn alt" data-resume href="Mohammed_Riyas_Resume.pdf" download>Download resume</a>
+      <a class="btn alt" href="#contact">Contact me</a>
+    </div>
+    <div class="mt-8 flex flex-wrap justify-center gap-2" aria-label="Technologies">
+      <span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">MySQL</span><span class="tag">Python</span><span class="tag">Machine Learning</span>
+    </div>
+    <div class="mt-6 flex justify-center gap-5 text-sm font-bold">
+      <a href="https://github.com/mohammed-riyas04" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/mohammed-riyas04" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 120V70C240 10 520 0 760 28s480 50 680 8v84z" fill="#0A0A0F"/></svg>
+</header>
+
+<section class="dark" aria-label="Technology stack" style="margin-top:-1px">
+  <div class="wrap py-10 flex flex-wrap justify-center gap-x-10 gap-y-4 font-bold text-lg opacity-90">
+    <span>Java</span><span>Spring Boot</span><span>MySQL</span><span>Python</span><span>Scikit-learn</span><span>XGBoost</span>
+  </div>
+  <svg viewBox="0 0 1440 80" preserveAspectRatio="none" style="display:block;width:100%;height:70px;margin-bottom:-1px" aria-hidden="true"><path d="M0 0C300 90 1100 90 1440 0v80H0z" fill="var(--bg)"/></svg>
+</section>
+
+<section id="about" class="sec">
+  <div class="wrap">
+    <h2 class="title">About me</h2>
+    <p class="sub" style="max-width:720px">I’m a 2026 Computer Science and Engineering graduate specializing in Artificial Intelligence and Machine Learning. My technical foundation includes Java, Spring Boot, MySQL, and Python. I’ve built an Employee Management System and a Tea Quality Prediction machine-learning project, applying my knowledge to practical software and data problems. I’m looking for an opportunity to contribute to a development team, strengthen my engineering skills, and grow as a software professional.</p>
+    <div class="grid gap-6 mt-12 md:grid-cols-3" id="bring"></div>
+  </div>
+</section>
+
+<section id="skills" class="sec" style="background:var(--surface);border-block:2px solid var(--line)">
+  <div class="wrap">
+    <h2 class="title">Technical skills</h2>
+    <p class="sub">Technologies I’ve used in my projects and can talk about in an interview.</p>
+    <div class="grid gap-6 mt-12 md:grid-cols-2 lg:grid-cols-3" id="skillGrid"></div>
+  </div>
+</section>
+
+<section id="projects" class="sec dark">
+  <div class="absolute inset-0 glow" aria-hidden="true"></div>
+  <div class="wrap relative">
+    <h2 class="title">Projects</h2>
+    <p class="sub">Select a project to see the problem, features, and what I learned.</p>
+    <div class="grid gap-6 mt-12 md:grid-cols-2" id="projGrid"></div>
+  </div>
+</section>
+
+<section id="education" class="sec">
+  <div class="wrap">
+    <h2 class="title">Education</h2>
+    <div class="card max-w-[720px] mx-auto mt-10">
+      <h3 class="text-xl font-extrabold">B.E. Computer Science and Engineering (AI &amp; ML)</h3>
+      <p class="mt-2" style="color:var(--muted)">Dr. Mahalingam College of Engineering and Technology, Pollachi</p>
+      <div class="mt-4 flex flex-wrap gap-2"><span class="tag">Graduating 2026</span><span class="tag">CGPA 8.4 / 10</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="certifications" class="sec" style="padding-top:0">
+  <div class="wrap">
+    <h2 class="title">Certifications</h2>
+    <div class="grid gap-6 mt-10 md:grid-cols-2 max-w-[820px] mx-auto" id="certGrid"></div>
+  </div>
+</section>
+
+<section id="contact" class="sec dark" style="text-align:center">
+  <div class="wrap">
+    <h2 class="title" style="font-size:clamp(32px,5vw,52px)">Let’s work together</h2>
+    <p class="sub">I’m looking for my first role as a Java, backend, or AI/ML developer in Bengaluru, Chennai, or Coimbatore, and I’m open to relocating.</p>
+    <div class="mt-9 flex flex-wrap justify-center gap-3" id="contactBtns">
+      <a class="btn" href="https://www.linkedin.com/in/mohammed-riyas04" target="_blank" rel="noopener">Message on LinkedIn</a>
+      <a class="btn alt" href="https://github.com/mohammed-riyas04" target="_blank" rel="noopener">View GitHub</a>
+    </div>
+    <p class="mt-6 text-sm" style="color:#B8B8C4">Based in Coimbatore, Tamil Nadu, India</p>
+    <p id="toast" role="status" class="mt-3 text-sm font-bold" style="color:var(--yellow);min-height:1.4em"></p>
+  </div>
+</section>
+
+<footer style="border-top:2px solid var(--line)">
+  <div class="wrap py-10 grid gap-6 md:grid-cols-3 text-sm">
+    <div><p class="font-extrabold text-lg">Mohammed Riyas M</p><p style="color:var(--muted)" class="mt-1">Java, Spring Boot and machine learning, one project at a time.</p></div>
+    <nav aria-label="Footer" class="flex flex-wrap gap-x-4 gap-y-1"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a></nav>
+    <div class="md:text-right"><a href="https://github.com/mohammed-riyas04" target="_blank" rel="noopener">GitHub</a> · <a href="https://linkedin.com/in/mohammed-riyas04" target="_blank" rel="noopener">LinkedIn</a><p class="mt-2" style="color:var(--muted)">© <span id="yr"></span> Mohammed Riyas M. Thanks for visiting.</p></div>
+  </div>
+</footer>
+
+<dialog id="dlg" aria-labelledby="dTitle"></dialog>
+
+<script>
+/* ========= EDIT HERE ========= */
+const CONFIG = {
+  email: "",                      // add your professional email, e.g. "you@example.com"
+  resume: "Mohammed_Riyas_Resume.pdf" // put the PDF next to index.html
+};
+const BRING = [
+  ["Clean backend code","I structure Java applications in clear controller, service, and repository layers."],
+  ["REST API development","I build and document REST endpoints with validation and error handling."],
+  ["Database design","I model relational data in MySQL and connect it to Spring Boot."],
+  ["ML model building","I preprocess data, train, tune, and compare classification models in Python."],
+  ["Problem solving","I break problems into small steps and practise data structures regularly."],
+  ["Learning fast","I pick up new tools by building small projects with them."]
+];
+const SKILLS = {
+  "Programming":["Java","Python"],
+  "Backend":["Spring Boot","REST APIs","Bean Validation"],
+  "Databases":["MySQL","SQL"],
+  "Machine learning":["Scikit-learn","XGBoost","Data preprocessing","Model training and evaluation","GridSearchCV"],
+  "Frontend basics":["HTML","CSS","JavaScript","Bootstrap"],
+  "Concepts and tools":["Object-oriented programming","Git and GitHub","SDLC fundamentals"]
+};
+const PROJECTS = [
+ {title:"Employee Management System",cat:"Backend development",short:"Spring Boot and MySQL backend with 11 REST endpoints.",
+  tech:["Java","Spring Boot","MySQL","REST APIs"],
+  problem:"Organisations need a reliable way to create, read, update, and remove employee records through an API.",
+  features:["11 REST API endpoints","Three-layer architecture: controller, service, repository","Bean Validation on incoming data","Global exception handling for consistent error responses","Data seeder for sample records"],
+  flow:["Client","REST controller","Service","Repository","MySQL"],
+  learn:"Layered backend design, database integration with Spring Boot, input validation, and error handling.",
+  github:"",demo:""},
+ {title:"Tea Quality Prediction",cat:"Machine learning",short:"Classification models that predict tea quality grades.",
+  tech:["Python","Scikit-learn","XGBoost","Streamlit"],
+  problem:"Grading tea quality by hand is subjective. This project predicts quality grades from structured data.",
+  features:["Data preprocessing, feature scaling and encoding","Train/test split","Models explored: Logistic Regression, Decision Tree, Random Forest, XGBoost","Hyperparameter tuning with GridSearchCV","Streamlit interface for predictions"],
+  learn:"The full ML workflow: preparing data, comparing models, tuning, and presenting a model in a simple app.",
+  results:"Dataset size and evaluation metrics: to be added after final results are confirmed.",
+  github:"",demo:""},
+ {title:"E-Commerce Website",cat:"Frontend development · Jan to Feb 2025",short:"Responsive shopping site built with HTML, CSS, JavaScript, and Bootstrap.",
+  tech:["HTML","CSS","JavaScript","Bootstrap"],
+  problem:"A small online store front that works well on both phones and desktops.",
+  features:["Product display","Navigation menus","Dynamic elements with JavaScript","Mobile-friendly responsive layout"],
+  learn:"Responsive layouts with Bootstrap and adding interactivity with JavaScript.",
+  github:"",demo:""}
+];
+const CERTS = [
+ {name:"Oracle Certified Foundation Associate (Java)",org:"Oracle",date:"",id:"",url:""},
+ {name:"Fundamentals of Deep Learning",org:"NVIDIA",date:"",id:"",url:""}
+];
+/* ============================== */
+
+const $=s=>document.querySelector(s);
+const esc=t=>String(t).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const icon='<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg>';
+
+$("#bring").innerHTML=BRING.map(([t,d])=>`<div class="card text-center"><div class="flex justify-center">${icon}</div><h3 class="font-extrabold mt-3">${esc(t)}</h3><p class="mt-2 text-sm leading-relaxed" style="color:var(--muted)">${esc(d)}</p></div>`).join("");
+$("#skillGrid").innerHTML=Object.entries(SKILLS).map(([g,l])=>`<div class="card"><h3 class="font-extrabold text-lg">${esc(g)}</h3><div class="mt-4 flex flex-wrap gap-2">${l.map(s=>`<span class="tag">${esc(s)}</span>`).join("")}</div></div>`).join("");
+$("#projGrid").innerHTML=PROJECTS.map((p,i)=>`<button class="proj" data-i="${i}" type="button" aria-haspopup="dialog"><div class="thumb">${esc(p.title)}<br><span style="font-size:13px;font-weight:500;opacity:.6">Screenshot placeholder</span></div><div class="cap"><span class="font-bold">${esc(p.title)}<small>${esc(p.short)}</small></span><span aria-hidden="true" style="font-size:20px">↗</span></div></button>`).join("");
+$("#certGrid").innerHTML=CERTS.map(c=>`<div class="card"><h3 class="font-extrabold">${esc(c.name)}</h3><p class="mt-1 text-sm" style="color:var(--muted)">${esc(c.org)}${c.date?" · "+esc(c.date):""}${c.id?" · ID "+esc(c.id):""}</p>${c.url?`<a class="btn sm mt-4" href="${esc(c.url)}" target="_blank" rel="noopener">Verify</a>`:""}</div>`).join("");
+
+const dlg=$("#dlg");
+$("#projGrid").addEventListener("click",e=>{
+  const b=e.target.closest(".proj");if(!b)return;
+  const p=PROJECTS[b.dataset.i];
+  dlg.innerHTML=`<div class="flex justify-between gap-4"><div><h3 id="dTitle" class="text-2xl font-extrabold">${esc(p.title)}</h3><p class="text-sm mt-1" style="color:var(--muted)">${esc(p.cat)}</p></div><button class="btn alt sm" id="dClose" type="button" aria-label="Close details">Close</button></div>
+  <div class="mt-4 flex flex-wrap gap-2">${p.tech.map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div>
+  <h4>Problem</h4><p>${esc(p.problem)}</p>
+  <h4>What it includes</h4><ul>${p.features.map(f=>`<li>${esc(f)}</li>`).join("")}</ul>
+  ${p.flow?`<h4>Architecture</h4><div class="flow">${p.flow.map((f,i)=>(i?"<b aria-hidden='true'>→</b>":"")+`<span>${esc(f)}</span>`).join("")}</div>`:""}
+  ${p.results?`<h4>Results</h4><p class="ph">${esc(p.results)}</p>`:""}
+  <h4>What I learned</h4><p>${esc(p.learn)}</p>
+  <div class="mt-5 flex flex-wrap gap-3">${p.github?`<a class="btn sm" href="${esc(p.github)}" target="_blank" rel="noopener">GitHub repository</a>`:""}${p.demo?`<a class="btn alt sm" href="${esc(p.demo)}" target="_blank" rel="noopener">Live demo</a>`:""}${!p.github&&!p.demo?`<a class="btn sm" href="https://github.com/mohammed-riyas04" target="_blank" rel="noopener">See my GitHub</a>`:""}</div>`;
+  dlg.showModal();$("#dClose").onclick=()=>dlg.close();
+});
+dlg.addEventListener("click",e=>{if(e.target===dlg)dlg.close()});
+
+if(CONFIG.email){
+  $("#contactBtns").insertAdjacentHTML("afterbegin",`<a class="btn" href="mailto:${esc(CONFIG.email)}">Email me</a><button class="btn alt" id="copy" type="button">Copy email</button>`);
+  $("#copy").onclick=async()=>{try{await navigator.clipboard.writeText(CONFIG.email);$("#toast").textContent="Email copied."}catch{$("#toast").textContent="Copy failed. Email: "+CONFIG.email}};
+}
+document.querySelectorAll("[data-resume]").forEach(a=>a.href=CONFIG.resume);
+$("#yr").textContent=new Date().getFullYear();
+
+const menu=$("#menu"),mb=$("#menuBtn");
+mb.onclick=()=>{const o=menu.classList.toggle("hidden")===false;mb.setAttribute("aria-expanded",o);mb.textContent=o?"Close":"Menu"};
+menu.addEventListener("click",e=>{if(e.target.closest("a")){menu.classList.add("hidden");mb.setAttribute("aria-expanded","false");mb.textContent="Menu"}});
+
+$("#theme").onclick=()=>{
+  const r=document.documentElement,cur=r.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");
+  const n=cur==="dark"?"light":"dark";r.dataset.theme=n;try{localStorage.setItem("theme",n)}catch{}
+};
+try{const t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch{}
+
+const links=[...document.querySelectorAll("#links .nl")];
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(l=>l.classList.toggle("on",l.getAttribute("href")==="#"+e.target.id))}),{rootMargin:"-40% 0px -55% 0px"});
+document.querySelectorAll("main,header[id],section[id]").forEach(s=>io.observe(s));
+</script>
+</body>
+</html>
